@@ -454,7 +454,7 @@ display:none;
 
 </style>      
 </head> 
-  <body>  
+<body>  
 
     
  <!-- HEADER -->  
@@ -493,7 +493,7 @@ SBY FURNITURES HEADER
 <div class="dots" id="testimonialDots"></div>      
 <hr> 
     
- <!-- WELCOME -->
+ <!-- WELCOME -->  /* COPY TO TRIPLE DIV AN CHAMGE */
 <h2 style="text-align:center;">Welcome to S.Y.B FURNITURES 👋</h2>
 
 <p style="text-align:center;">
@@ -573,8 +573,13 @@ SBY FURNITURES HEADER
       <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">        
       WhatsApp        
     </div>        
-  </a>      </div>      </div>        
-</div>  <div id="shaddaView" class="view"></div>        
+  </a>     
+  </div>      
+  </div>        
+  </div> 
+    
+    
+<div id="shaddaView" class="view"></div>        
 <div id="shoesView" class="view"></div>        
 <div id="abayasView" class="view"></div>        
 <div id="yardView" class="view"></div>      
@@ -641,14 +646,14 @@ import {
   signOut
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
   
-// YOUR FIREBASE CONFIG
+// YOUR FIREBASE CONFIG Chanage for every website firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyDDVAgLq2Ny8ak4xfENa79yxJqvKILrPRE",
-  authDomain: "sbyfurnitures.firebaseapp.com",
-  projectId: "sbyfurnitures",
-  storageBucket: "sbyfurnitures.firebasestorage.app",
-  messagingSenderId: "1025066330918",
-  appId: "1:1025066330918:web:5df3470f76bd1bc67befe7"
+  apiKey: "AIzaSyA6ZaMnWKJEvSUlJgh31tU6rj8CvuietuM",
+  authDomain: "bob-26647.firebaseapp.com",
+  projectId: "bob-26647",
+  storageBucket: "bob-26647.firebasestorage.app",
+  messagingSenderId: "468659293220",
+  appId: "1:468659293220:web:507832347dc70ab78ddcb1"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -666,7 +671,7 @@ window.fb = { collection, addDoc, getDocs, deleteDoc, doc };
 
 <script>
 /* =========================================================
-   S.Y.B FURNITURES
+   BOB TEXTILE
    MAIN JAVASCRIPT
 ========================================================= */
 
@@ -712,7 +717,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     restoreActiveView();
 
-    console.log("S.Y.B FURNITURES loaded successfully ✅");
+    console.log("BOB TEXTILE loaded successfully ✅"); 
 
   } catch(error) {
 
@@ -721,7 +726,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
 });
-
+/* change company name above */
 
 /* =========================================================
    ADD CATEGORY
@@ -1724,8 +1729,7 @@ Is this available? I want to buy.`;
     "https://wa.me/2349035341879?text=" +
     encodeURIComponent(msg),
 
-    "_blank"
-
+    "_blank".           /* Change whatsapp Number */
   );
 
 }
@@ -1838,10 +1842,10 @@ function uploadImage(){
   cloudinary.openUploadWidget({
 
     cloudName:
-      "db92r6j9z",
+      "db92r6j9z",            /* To be change Cloudinary */
 
     uploadPreset:
-      "ummuhalti",
+      "ummuhalti",            /* To be chamge Cloudinary */
 
     sources:
       ["local","camera"],
@@ -1931,10 +1935,10 @@ function uploadWorkPlaceVideo(){
   cloudinary.openUploadWidget({
 
     cloudName:
-      "db92r6j9z",
+      "db92r6j9z",                  /* To be change Cloudinary */
 
     uploadPreset:
-      "ummuhalti",
+      "ummuhalti",                 /* To be change Cloudinary*/
 
     resourceType:
       "video",
@@ -2737,10 +2741,10 @@ function uploadTestimonials(){
   cloudinary.openUploadWidget({
 
     cloudName:
-      "db92r6j9z",
+      "db92r6j9z",              /* To be change for Cloudinary */
 
-    uploadPreset:
-      "ummuhalti",
+    uploadPreset:     
+      "ummuhalti",            /* To be Change for cloudinary */
 
     sources:
       ["local","camera"],
